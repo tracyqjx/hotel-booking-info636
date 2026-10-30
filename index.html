@@ -3,31 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173c39">
-  <title>Hotel Booking Assistant</title>
-  <style>
-    :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; color: #173c39; background: #f5f1e9; }
-    main { min-height: 100vh; display: grid; place-items: center; padding: 48px 24px 120px; }
-    .card { width: min(100%, 640px); padding: clamp(32px, 6vw, 64px); background: #fffdf8; border: 1px solid #e6ded1; border-radius: 24px; box-shadow: 0 20px 60px rgba(23, 60, 57, .09); }
-    .eyebrow { margin: 0 0 16px; color: #a96942; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-    h1 { margin: 0 0 20px; font-family: Georgia, serif; font-size: clamp(40px, 7vw, 64px); font-weight: 400; line-height: 1.05; }
-    p { max-width: 44ch; font-size: 18px; line-height: 1.6; }
-    .hint { margin-top: 28px; font-size: 15px; color: #506764; }
-    df-messenger { --df-messenger-bot-message: #e9f2ef; --df-messenger-button-titlebar-color: #173c39; --df-messenger-chat-background-color: #fffdf8; --df-messenger-font-color: #173c39; --df-messenger-send-icon: #173c39; --df-messenger-user-message: #f1dfca; }
-  </style>
+  <title>Hotel-Booking</title>
 </head>
 <body>
-  <main>
-    <section class="card" aria-labelledby="title">
-      <p class="eyebrow">Hotel Booking</p>
-      <h1 id="title">How can we help with your stay?</h1>
-      <p>Chat with our hotel booking assistant to get started.</p>
-      <p class="hint">Tap the chat icon in the lower right corner to begin.</p>
-    </section>
-  </main>
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-  <df-messenger chat-title="Hotel-Booking" agent-id="a087ff55-7b73-422c-a2c7-3dad88fd9f89" language-code="en"></df-messenger>
+  <df-messenger
+    chat-title="Hotel-Booking"
+    agent-id="a087ff55-7b73-422c-a2c7-3dad88fd9f89"
+    language-code="en"
+  ></df-messenger>
 </body>
 </html>
